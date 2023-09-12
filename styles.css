@@ -17,7 +17,7 @@ body {
 }
 
 .vyasa .img-container img {
-  width: 7rem;
+  width: 5rem;
   vertical-align: top;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .samachar {
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
 }
 
 .font-16 {
@@ -93,4 +93,16 @@ button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+/* Styles for devices with a width between 481px and 767px (landscape view) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Your styles for mobile landscape view go here */
+  .container {
+    padding: 0 5rem;
+  }
+
+  .text-container {
+    margin: 0.5em 0 0 1em;
+  }
 }
