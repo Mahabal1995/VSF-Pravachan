@@ -8,6 +8,10 @@ body {
   background-color: #f9edde;
 }
 
+.container {
+  margin: 5rem 0 2rem 0;
+}
+
 .vyasa {
   margin: 20px 10px 0 15px;
   display: flex;
@@ -72,7 +76,7 @@ body {
   text-align: center;
 }
 
-button {
+.btn {
   background-color: #990000;
   color: #ffffff;
   border: none;
@@ -80,7 +84,7 @@ button {
   font-family: arial, "helvetica neue", helvetica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  width: 50%;
+  width: 100%;
   text-align: center;
   padding: 5px 20px;
   line-height: 150%;
@@ -99,6 +103,7 @@ button {
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /* Your styles for mobile landscape view go here */
   .container {
+    margin: 0;
     padding: 0 5rem;
   }
 
