@@ -99,6 +99,10 @@ body {
   align-items: center;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* Styles for devices with a width between 481px and 767px (landscape view) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   /* Your styles for mobile landscape view go here */
