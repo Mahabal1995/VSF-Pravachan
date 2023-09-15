@@ -39,17 +39,37 @@
         <div class="center">
           <p class="font-14 mt-30 mb-11">
             You can amplify your feeling by pefroming a
-            <a href="https://sadhana-app.onelink.me/nGkt/l220fk80">OM</a> ritual
+            <!-- <a href="https://sadhana-app.onelink.me/nGkt/l220fk80">OM</a> ritual -->
           </p>
-          <a href="https://sadhana-app.onelink.me/nGkt/l220fk80">
-            <button class="btn" onclick="playVideo()">Begin Abhishekam</button>
-          </a>
+          <!-- <a href="https://sadhana-app.onelink.me/nGkt/l220fk80"> -->
+          <button id="showInAppButton" class="btn" onclick="playVideo()">
+            Begin Abhishekam
+          </button>
+          <!-- </a> -->
         </div>
       </section>
     </section>
+
+    <script>
+      // Simulated function to show an in-app message with custom data
+      function showInAppMessage() {
+        // Simulate the custom data for the CTA button
+        var customData = {
+          id: 53,
+          deity: 6,
+          ritual: "Abhishekam",
+          navigate_to: "Ritual_Start",
+          InAppMessage: true,
+        };
+      }
+      // Attach a click event listener to the button
+      document
+        .getElementById("showInAppButton")
+        .addEventListener("click", showInAppMessage);
+    </script>
   </body>
 
-  <script>
+  <!-- <script>
     function playVideo() {
       console.log("Its working");
       var video = document.getElementById("video");
@@ -59,5 +79,5 @@
       // );
       video.src += "?autoplay=1";
     }
-  </script>
+  </script> -->
 </html>
