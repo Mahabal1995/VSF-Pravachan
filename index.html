@@ -9,6 +9,14 @@
     <script
       src="https://kit.fontawesome.com/70d67e3bbf.js"
       crossorigin="anonymous"></script>
+    <script>
+      function redirectToAnotherPage() {
+        window.open(
+          "https://mahabal1995.github.io/VSF-Pravachan-redirect-page/",
+          "_blank"
+        );
+      }
+    </script>
   </head>
   <body>
     <section class="container">
@@ -46,11 +54,13 @@
             Begin Abhishekam
           </button> -->
           <!-- </a> -->
-          <a
-            href="https://mahabal1995.github.io/VSF-Pravachan-redirect-page/"
-            target="_blank">
-            <button id="showInAppButton" class="btn">Begin Abhishekam</button>
-          </a>
+
+          <button
+            id="showInAppButton"
+            class="btn"
+            onclick="redirectToAnotherPage()">
+            Begin Abhishekam
+          </button>
         </div>
       </section>
     </section>
