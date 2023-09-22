@@ -5,26 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pravachan</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/70d67e3bbf.js"
-      crossorigin="anonymous"></script>
-    <script>
-      function redirectToAnotherPage() {
-        event.preventDefault();
-        window.open(
-          "https://mahabal1995.github.io/VSF-Pravachan-redirect-page/",
-          "_system"
-        );
-      }
-    </script>
   </head>
   <body>
     <section class="container">
       <section class="vyasa">
-        <!-- <div class="img-container">
-          <img src="images/smachar-min.png" alt="Vyasa" />
-        </div> -->
         <div class="text-container">
           <p class="mb-4 centered">
             On the occasion of Sharad Purnima, I bring to you a soulful
@@ -56,17 +40,33 @@
           </button> -->
           <!-- </a> -->
 
-          <button
-            id="showInAppButton"
-            class="btn"
-            onclick="redirectToAnotherPage()">
-            Begin Abhishekam
-          </button>
+          <a
+            href="https://mahabal1995.github.io/VSF-Pravachan-redirect-page/"
+            onclick="redirectToAnotherPage(event); return false;">
+            <button id="showInAppButton" class="btn">Begin Abhishekam</button>
+          </a>
         </div>
       </section>
     </section>
 
-    <!-- <script>
+    <script>
+      function redirectToAnotherPage(event) {
+        var targetUrl = event.target.href;
+
+        if (isExternalLink(targetUrl)) {
+          window.open(targetUrl, "_system");
+          event.preventDefault();
+        }
+      }
+
+      function isExternalLink(url) {
+        return !url.includes("yourappdomain.com");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <script>
       // Simulated function to show an in-app message with custom data
       function showInAppMessage() {
         // Simulate the custom data for the CTA button
@@ -83,9 +83,8 @@
         .getElementById("showInAppButton")
         .addEventListener("click", showInAppMessage);
     </script> -->
-  </body>
 
-  <!-- <script>
+<!-- <script>
     function playVideo() {
       console.log("Its working");
       var video = document.getElementById("video");
@@ -96,4 +95,3 @@
       video.src += "?autoplay=1";
     }
   </script> -->
-</html>
