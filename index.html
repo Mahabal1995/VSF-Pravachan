@@ -43,7 +43,8 @@
           <a
             href="https://mahabal1995.github.io/VSF-Pravachan-redirect-page/"
             onclick="redirectToAnotherPage(event); return false;">
-            <button id="showInAppButton" class="btn">Begin Abhishekam</button>
+            Begin Abhishekam
+            <!-- <button id="showInAppButton" class="btn">Begin Abhishekam</button> -->
           </a>
         </div>
       </section>
@@ -51,16 +52,18 @@
 
     <script>
       function redirectToAnotherPage(event) {
+        console.log("OM");
         var targetUrl = event.target.href;
 
         if (isExternalLink(targetUrl)) {
-          window.open(targetUrl, "_system");
+          console.log("OM..OM");
+          window.open(targetUrl, "_blank");
           event.preventDefault();
         }
       }
 
       function isExternalLink(url) {
-        return !url.includes("yourappdomain.com");
+        return !url.includes("sadhana.app");
       }
     </script>
   </body>
