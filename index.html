@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="container">
+    <section class="container" style="overflow: scroll">
       <section class="vyasa">
         <div class="text-container">
           <p class="mb-4 centered">
@@ -52,11 +52,9 @@
 
     <script>
       function redirectToAnotherPage(event) {
-        console.log("OM");
         var targetUrl = event.target.href;
 
         if (isExternalLink(targetUrl)) {
-          console.log("OM..OM");
           window.open(targetUrl, "_blank");
           event.preventDefault();
         }
